@@ -1,7 +1,8 @@
 <?php
+
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class auth extends CI_Controller
+class Auth extends CI_Controller
 {
     public function index()
     {
@@ -10,10 +11,11 @@ class auth extends CI_Controller
         $this->load->view('template/auth_footer');
     }
 
-    public function register()
+    public function tes()
     {
-        $this->load->view('template/auth_header');
-        $this->load->view('auth/register');
-        $this->load->view('template/auth_footer');
+        echo "ok";
+        // $this->load->view('template/auth_header');
+        // $this->load->view('auth/register');
+        // $this->load->view('template/auth_footer');
     }
 }
